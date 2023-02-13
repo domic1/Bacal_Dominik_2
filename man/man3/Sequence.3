@@ -1,0 +1,120 @@
+.TH "Sequence" 3 "Mon Feb 13 2023" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sequence
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSequence\fP (int=100, int=25, string='red')"
+.br
+.RI "konstruktor domyślny "
+.ti -1c
+.RI "\fB~Sequence\fP ()"
+.br
+.RI "destruktor "
+.ti -1c
+.RI "\fBSequence\fP (const \fBSequence\fP &fSequence)"
+.br
+.RI "konstruktor kopiujący "
+.ti -1c
+.RI "int \fBgetWidth\fP ()"
+.br
+.RI "funkcja zwracająca szerokość obiektu "
+.ti -1c
+.RI "void \fBsetWidth\fP (int)"
+.br
+.RI "funkcja pozwalająca ustawić szerokość obiektu "
+.ti -1c
+.RI "int \fBgetHeight\fP ()"
+.br
+.RI "funkcja zwracająca wysokość obiektu "
+.ti -1c
+.RI "void \fBsetHeight\fP (int)"
+.br
+.RI "funkcja pozwalająca ustawić wysokość obiektu "
+.ti -1c
+.RI "string \fBgetColor\fP ()"
+.br
+.RI "funkcja zwracająca kolor obiektu "
+.ti -1c
+.RI "void \fBsetColor\fP (string)"
+.br
+.RI "funkcja pozwalająca ustawić kolor obiektu "
+.ti -1c
+.RI "double \fBcalcSimpleIntegral\fP ()"
+.br
+.RI "funkcja obliczająca silnię danej liczby "
+.ti -1c
+.RI "double \fBcalcComplexIntegral\fP ()"
+.br
+.RI "funkcja obliczająca skomplikowaną całkę "
+.ti -1c
+.RI "double \fBheightOfEquTriangle\fP ()"
+.br
+.RI "funkcja obliczająca wysokość trójkąta równobocznego na podstawie długości ramienia "
+.ti -1c
+.RI "double \fBsin\fP (double)"
+.br
+.RI "funkcja obliczająca sinus danego kąta "
+.ti -1c
+.RI "double \fBcos\fP (double)"
+.br
+.RI "funkcja obliczająca cosinus danego kąta "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "Sequence::calcComplexIntegral ()"
+
+.PP
+funkcja obliczająca skomplikowaną całkę Funkcja bazuje w oparciu o wzory 
+.br
+ $ \int\frac{dx}{x\sqrt{x^2-1}} = -cosec^{-1}x+C $ 
+.br
+ $ \int sin^2 x dx = \int\frac{1-cos2x}{2} dx $
+.SS "Sequence::calcSimpleIntegral ()"
+
+.PP
+funkcja obliczająca silnię danej liczby Funkcja bazuje w oprarciu o wzór $ \int\frac{1}{\sqrt{x^2 - a^2}}dx = ln|x+\sqrt{x^2-a^2}|+C $
+.SS "Sequence::cos (double x)"
+
+.PP
+funkcja obliczająca cosinus danego kąta funkcja oblicza cosinus danego kąta na podstawie kąta podanego w stopniach kątowych 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP - kąt w stopniach kątowych
+.RE
+.PP
+RadianyWartość cosinusStopnie $\frac{Π}{2}$090 $\frac{Π}{3}$$\frac{1}{2}$ 60 $\frac{Π}{4}$$\frac{\sqrt{2}}{2}$45 $\frac{Π}{6}$$\frac{\sqrt{3}}{2}$30 000 
+.PP
+Jeśli wykres nie działa należy w doxygenie w image path dodać ścieżke img
+.PP
+Wykres cosinusa      
+.SS "Sequence::heightOfEquTriangle ()"
+
+.PP
+funkcja obliczająca wysokość trójkąta równobocznego na podstawie długości ramienia wysokość trójkąta o boku a to $h=\frac{a\times\sqrt3}{2} $
+.SS "Sequence::sin (double x)"
+
+.PP
+funkcja obliczająca sinus danego kąta funkcja oblicza sinus danego kąta na podstawie kąta podanego w stopniach kątowych 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP - kąt w stopniach kątowych
+.RE
+.PP
+RadianyWartość sinStopnie $\frac{Π}{2}$190 $\frac{Π}{3}$$\frac{\sqrt{3}}{2}$ 60 $\frac{Π}{4}$$\frac{\sqrt{2}}{2}$45 $\frac{Π}{6}$$\frac{1}{2}$30 000 
+.PP
+Jeśli wykres nie działa należy w doxygenie w image path dodać ścieżke img
+.PP
+Wykres Sinusa      
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

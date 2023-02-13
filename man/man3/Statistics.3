@@ -1,0 +1,68 @@
+.TH "Statistics" 3 "Mon Feb 13 2023" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Statistics
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatistics\fP (double=0, double=0)"
+.br
+.RI "konstruktor domyślny "
+.ti -1c
+.RI "\fB~Statistics\fP ()"
+.br
+.RI "destruktor "
+.ti -1c
+.RI "\fBStatistics\fP (const \fBStatistics\fP &fStatistics)"
+.br
+.RI "konstruktor kopiujący "
+.ti -1c
+.RI "double \fBgetArithmeticAverage\fP ()"
+.br
+.RI "metoda pozwalająca zwrócić wartość średniej arytmetycznej obiektu "
+.ti -1c
+.RI "void \fBsetArithmeticAverage\fP (double)"
+.br
+.RI "metoda pozwalająca zmienić wartość średniej arytmetycznej obiektu "
+.ti -1c
+.RI "double \fBgetArithmeticWeighted\fP ()"
+.br
+.RI "funkcja pozwalająca zwrócić wartość średniej ważonej obiektu "
+.ti -1c
+.RI "void \fBsetArithmeticWeighted\fP (double)"
+.br
+.RI "funkcja pozwalająca zmienić wartość średniej ważonej obiektu "
+.ti -1c
+.RI "double \fBcalcArithmeticAverage\fP ()"
+.br
+.RI "metoda obliczająca średnią arytmetyczną "
+.ti -1c
+.RI "double \fBcalcArithmeticWeighted\fP ()"
+.br
+.RI "metoda obliczająca średnią ważoną kilku wartości "
+.ti -1c
+.RI "double \fBcalcHarmonicSeries\fP ()"
+.br
+.RI "\\funckja obliczająca wartość ciągu harmonicznego "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "Statistics::calcArithmeticAverage ()"
+
+.PP
+metoda obliczająca średnią arytmetyczną calcArithmeticAverage jest funkcją, która oblicza średnią ustalonej liczby obiektów dowolnego typu, które można dodawać i dzielić\&. Dane wejściowe to tablica wartości, a dane wyjściowe to średnia arytmetyczna tych wartości\&. Funkcja używa pętli for do sumowania elementów w tablicy, a następnie dzieli sumę przez liczbę elementów, aby uzyskać średnią\&. Średnią arytmetyczną oblicza się ze wzoru $ a = \frac{\sum_{i=1}^n}{n} $ 
+.SS "Statistics::calcArithmeticWeighted ()"
+
+.PP
+metoda obliczająca średnią ważoną kilku wartości calcAverageWeighted funkcją, który oblicza średnią ważoną ustalonej liczby obiektów dowolnego typu, które można pomnożyć i dodać\&. Dane wejściowe to dwie tablice: jedna dla wartości i jedna dla wag\&. Wynikiem jest średnia ważona tych wartości\&. Funkcja używa dwóch pętli for do sumowania iloczynów wartości i wag oraz samych wag\&. Następnie dzieli sumę produktów przez sumę wag, aby uzyskać średnią ważoną\&.
+.PP
+Średnią ważoną oblicza się ze wzoru: $  X_w = \frac{\sum_{i=1}^n w_i x_i}{\sum_{i=1}^n w_i} $ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

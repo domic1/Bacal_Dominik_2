@@ -1,0 +1,177 @@
+\hypertarget{class_sequence}{}\doxysection{Sequence Class Reference}
+\label{class_sequence}\index{Sequence@{Sequence}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sequence_ad8d1d7f6ede75be914864344e414fb25}\label{class_sequence_ad8d1d7f6ede75be914864344e414fb25}} 
+{\bfseries Sequence} (int=100, int=25, string=\char`\"{}red\char`\"{})
+\begin{DoxyCompactList}\small\item\em konstruktor domyślny \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}\label{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}} 
+{\bfseries $\sim$\+Sequence} ()
+\begin{DoxyCompactList}\small\item\em destruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_aca90f498d1a73c25091eff47c5069ce1}\label{class_sequence_aca90f498d1a73c25091eff47c5069ce1}} 
+{\bfseries Sequence} (const \mbox{\hyperlink{class_sequence}{Sequence}} \&f\+Sequence)
+\begin{DoxyCompactList}\small\item\em konstruktor kopiujący \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_a35a2deb8fb26f10a1ca3a74dddbc1808}\label{class_sequence_a35a2deb8fb26f10a1ca3a74dddbc1808}} 
+int {\bfseries get\+Width} ()
+\begin{DoxyCompactList}\small\item\em funkcja zwracająca szerokość obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_a805d5417d2ebb961dc0096c46719a252}\label{class_sequence_a805d5417d2ebb961dc0096c46719a252}} 
+void {\bfseries set\+Width} (int)
+\begin{DoxyCompactList}\small\item\em funkcja pozwalająca ustawić szerokość obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_a19a0969279e432aedeb33b90df951155}\label{class_sequence_a19a0969279e432aedeb33b90df951155}} 
+int {\bfseries get\+Height} ()
+\begin{DoxyCompactList}\small\item\em funkcja zwracająca wysokość obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_a3a79155ebf67e8f3f9da3515ea0fc2c3}\label{class_sequence_a3a79155ebf67e8f3f9da3515ea0fc2c3}} 
+void {\bfseries set\+Height} (int)
+\begin{DoxyCompactList}\small\item\em funkcja pozwalająca ustawić wysokość obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_adcb48365d1eb0350ca941d93163d0269}\label{class_sequence_adcb48365d1eb0350ca941d93163d0269}} 
+string {\bfseries get\+Color} ()
+\begin{DoxyCompactList}\small\item\em funkcja zwracająca kolor obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sequence_aca3373a672fcf716e1bb43e84ede5804}\label{class_sequence_aca3373a672fcf716e1bb43e84ede5804}} 
+void {\bfseries set\+Color} (string)
+\begin{DoxyCompactList}\small\item\em funkcja pozwalająca ustawić kolor obiektu \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_a0d2fbea9ccb5351288ceea8c06bfe9c5}{calc\+Simple\+Integral}} ()
+\begin{DoxyCompactList}\small\item\em funkcja obliczająca silnię danej liczby \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_a7c3f7e9b9352ffdd094104e851e62c69}{calc\+Complex\+Integral}} ()
+\begin{DoxyCompactList}\small\item\em funkcja obliczająca skomplikowaną całkę \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_a4683aa5f8fe3c81f866c77301978e46a}{height\+Of\+Equ\+Triangle}} ()
+\begin{DoxyCompactList}\small\item\em funkcja obliczająca wysokość trójkąta równobocznego na podstawie długości ramienia \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_ad3469198ddf7af4d589d5fa41a0ed6b7}{sin}} (double)
+\begin{DoxyCompactList}\small\item\em funkcja obliczająca sinus danego kąta \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_af2219fc85feb256773e2e00cccd74ee8}{cos}} (double)
+\begin{DoxyCompactList}\small\item\em funkcja obliczająca cosinus danego kąta \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sequence_a7c3f7e9b9352ffdd094104e851e62c69}\label{class_sequence_a7c3f7e9b9352ffdd094104e851e62c69}} 
+\index{Sequence@{Sequence}!calcComplexIntegral@{calcComplexIntegral}}
+\index{calcComplexIntegral@{calcComplexIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{calcComplexIntegral()}{calcComplexIntegral()}}
+{\footnotesize\ttfamily Sequence\+::calc\+Complex\+Integral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+funkcja obliczająca skomplikowaną całkę 
+
+Funkcja bazuje w oparciu o wzory ~\newline
+ $ \int\frac{dx}{x\sqrt{x^2-1}} = -cosec^{-1}x+C $ ~\newline
+ $ \int sin^2 x dx = \int\frac{1-cos2x}{2} dx $\mbox{\Hypertarget{class_sequence_a0d2fbea9ccb5351288ceea8c06bfe9c5}\label{class_sequence_a0d2fbea9ccb5351288ceea8c06bfe9c5}} 
+\index{Sequence@{Sequence}!calcSimpleIntegral@{calcSimpleIntegral}}
+\index{calcSimpleIntegral@{calcSimpleIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{calcSimpleIntegral()}{calcSimpleIntegral()}}
+{\footnotesize\ttfamily Sequence\+::calc\+Simple\+Integral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+funkcja obliczająca silnię danej liczby 
+
+Funkcja bazuje w oprarciu o wzór $ \int\frac{1}{\sqrt{x^2 - a^2}}dx = ln|x+\sqrt{x^2-a^2}|+C $\mbox{\Hypertarget{class_sequence_af2219fc85feb256773e2e00cccd74ee8}\label{class_sequence_af2219fc85feb256773e2e00cccd74ee8}} 
+\index{Sequence@{Sequence}!cos@{cos}}
+\index{cos@{cos}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{cos()}{cos()}}
+{\footnotesize\ttfamily Sequence\+::cos (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+funkcja obliczająca cosinus danego kąta 
+
+funkcja oblicza cosinus danego kąta na podstawie kąta podanego w stopniach kątowych 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & -\/ kąt w stopniach kątowych\\
+\hline
+\end{DoxyParams}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Radiany}&\cellcolor{\tableheadbgcolor}\textbf{ Wartość cosinus}&\cellcolor{\tableheadbgcolor}\textbf{ Stopnie }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Radiany}&\cellcolor{\tableheadbgcolor}\textbf{ Wartość cosinus}&\cellcolor{\tableheadbgcolor}\textbf{ Stopnie }\\\cline{1-3}
+\endhead
+$\frac{Π}{2}$&0&90 \\\cline{1-3}
+$\frac{Π}{3}$&$\frac{1}{2}$ &60 \\\cline{1-3}
+$\frac{Π}{4}$&$\frac{\sqrt{2}}{2}$&45 \\\cline{1-3}
+$\frac{Π}{6}$&$\frac{\sqrt{3}}{2}$&30 \\\cline{1-3}
+0&0&0 \\\cline{1-3}
+\end{longtabu}
+
+
+Jeśli wykres nie działa należy w doxygenie w image path dodać ścieżke img
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Wykres cosinusa    }\\\cline{1-1}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Wykres cosinusa    }\\\cline{1-1}
+\endhead
+  \\\cline{1-1}
+\end{longtabu}
+\mbox{\Hypertarget{class_sequence_a4683aa5f8fe3c81f866c77301978e46a}\label{class_sequence_a4683aa5f8fe3c81f866c77301978e46a}} 
+\index{Sequence@{Sequence}!heightOfEquTriangle@{heightOfEquTriangle}}
+\index{heightOfEquTriangle@{heightOfEquTriangle}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{heightOfEquTriangle()}{heightOfEquTriangle()}}
+{\footnotesize\ttfamily Sequence\+::height\+Of\+Equ\+Triangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+funkcja obliczająca wysokość trójkąta równobocznego na podstawie długości ramienia 
+
+wysokość trójkąta o boku a to $h=\frac{a\times\sqrt3}{2} $\mbox{\Hypertarget{class_sequence_ad3469198ddf7af4d589d5fa41a0ed6b7}\label{class_sequence_ad3469198ddf7af4d589d5fa41a0ed6b7}} 
+\index{Sequence@{Sequence}!sin@{sin}}
+\index{sin@{sin}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{sin()}{sin()}}
+{\footnotesize\ttfamily Sequence\+::sin (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+funkcja obliczająca sinus danego kąta 
+
+funkcja oblicza sinus danego kąta na podstawie kąta podanego w stopniach kątowych 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & -\/ kąt w stopniach kątowych\\
+\hline
+\end{DoxyParams}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Radiany}&\cellcolor{\tableheadbgcolor}\textbf{ Wartość sin}&\cellcolor{\tableheadbgcolor}\textbf{ Stopnie }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Radiany}&\cellcolor{\tableheadbgcolor}\textbf{ Wartość sin}&\cellcolor{\tableheadbgcolor}\textbf{ Stopnie }\\\cline{1-3}
+\endhead
+$\frac{Π}{2}$&1&90 \\\cline{1-3}
+$\frac{Π}{3}$&$\frac{\sqrt{3}}{2}$ &60 \\\cline{1-3}
+$\frac{Π}{4}$&$\frac{\sqrt{2}}{2}$&45 \\\cline{1-3}
+$\frac{Π}{6}$&$\frac{1}{2}$&30 \\\cline{1-3}
+0&0&0 \\\cline{1-3}
+\end{longtabu}
+
+
+Jeśli wykres nie działa należy w doxygenie w image path dodać ścieżke img
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Wykres Sinusa    }\\\cline{1-1}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Wykres Sinusa    }\\\cline{1-1}
+\endhead
+  \\\cline{1-1}
+\end{longtabu}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sequence.\+h\item 
+sequence.\+cpp\end{DoxyCompactItemize}
