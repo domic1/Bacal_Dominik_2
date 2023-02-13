@@ -1,0 +1,64 @@
+\hypertarget{class_statistics}{}\doxysection{Statistics Class Reference}
+\label{class_statistics}\index{Statistics@{Statistics}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_statistics_a2c904fa47f0114f68eaa687fd1c32ea2}\label{class_statistics_a2c904fa47f0114f68eaa687fd1c32ea2}} 
+{\bfseries Statistics} (double=0, double=0)
+\begin{DoxyCompactList}\small\item\em konstruktor domyślny \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistics_ab68ede75479e44d5c35b78ec1284065b}\label{class_statistics_ab68ede75479e44d5c35b78ec1284065b}} 
+{\bfseries $\sim$\+Statistics} ()
+\begin{DoxyCompactList}\small\item\em destruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistics_a10da071ebd4f519560c8d1dcac63fcc8}\label{class_statistics_a10da071ebd4f519560c8d1dcac63fcc8}} 
+{\bfseries Statistics} (const \mbox{\hyperlink{class_statistics}{Statistics}} \&f\+Statistics)
+\begin{DoxyCompactList}\small\item\em konstruktor kopiujący \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistics_a828ea726991ee4d1279d3e6b7994ae06}\label{class_statistics_a828ea726991ee4d1279d3e6b7994ae06}} 
+double {\bfseries get\+Arithmetic\+Average} ()
+\begin{DoxyCompactList}\small\item\em metoda pozwalająca zwrócić wartość średniej arytmetycznej obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistics_a64bd64e4b7e060561a3f35f90310f0a4}\label{class_statistics_a64bd64e4b7e060561a3f35f90310f0a4}} 
+void {\bfseries set\+Arithmetic\+Average} (double)
+\begin{DoxyCompactList}\small\item\em metoda pozwalająca zmienić wartość średniej arytmetycznej obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistics_a79d5a6d1cf6a9bc4098d50c4b48a16ff}\label{class_statistics_a79d5a6d1cf6a9bc4098d50c4b48a16ff}} 
+double {\bfseries get\+Arithmetic\+Weighted} ()
+\begin{DoxyCompactList}\small\item\em funkcja pozwalająca zwrócić wartość średniej ważonej obiektu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistics_a24f0eafbcf92140a3daf2a1945cc5c66}\label{class_statistics_a24f0eafbcf92140a3daf2a1945cc5c66}} 
+void {\bfseries set\+Arithmetic\+Weighted} (double)
+\begin{DoxyCompactList}\small\item\em funkcja pozwalająca zmienić wartość średniej ważonej obiektu \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistics_a41688f78f4e2b63bd3bef0c12197070c}{calc\+Arithmetic\+Average}} ()
+\begin{DoxyCompactList}\small\item\em metoda obliczająca średnią arytmetyczną \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistics_ad05c2f5dc483a98a3bfb3214d69886b4}{calc\+Arithmetic\+Weighted}} ()
+\begin{DoxyCompactList}\small\item\em metoda obliczająca średnią ważoną kilku wartości \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistics_abab0b3e978cba25a92e493026801c686}\label{class_statistics_abab0b3e978cba25a92e493026801c686}} 
+double {\bfseries calc\+Harmonic\+Series} ()
+\begin{DoxyCompactList}\small\item\em \textbackslash{}funckja obliczająca wartość ciągu harmonicznego \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_statistics_a41688f78f4e2b63bd3bef0c12197070c}\label{class_statistics_a41688f78f4e2b63bd3bef0c12197070c}} 
+\index{Statistics@{Statistics}!calcArithmeticAverage@{calcArithmeticAverage}}
+\index{calcArithmeticAverage@{calcArithmeticAverage}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{calcArithmeticAverage()}{calcArithmeticAverage()}}
+{\footnotesize\ttfamily Statistics\+::calc\+Arithmetic\+Average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda obliczająca średnią arytmetyczną 
+
+calc\+Arithmetic\+Average jest funkcją, która oblicza średnią ustalonej liczby obiektów dowolnego typu, które można dodawać i dzielić. Dane wejściowe to tablica wartości, a dane wyjściowe to średnia arytmetyczna tych wartości. Funkcja używa pętli for do sumowania elementów w tablicy, a następnie dzieli sumę przez liczbę elementów, aby uzyskać średnią. Średnią arytmetyczną oblicza się ze wzoru $ a = \frac{\sum_{i=1}^n}{n} $ \mbox{\Hypertarget{class_statistics_ad05c2f5dc483a98a3bfb3214d69886b4}\label{class_statistics_ad05c2f5dc483a98a3bfb3214d69886b4}} 
+\index{Statistics@{Statistics}!calcArithmeticWeighted@{calcArithmeticWeighted}}
+\index{calcArithmeticWeighted@{calcArithmeticWeighted}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{calcArithmeticWeighted()}{calcArithmeticWeighted()}}
+{\footnotesize\ttfamily Statistics\+::calc\+Arithmetic\+Weighted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda obliczająca średnią ważoną kilku wartości 
+
+calc\+Average\+Weighted funkcją, który oblicza średnią ważoną ustalonej liczby obiektów dowolnego typu, które można pomnożyć i dodać. Dane wejściowe to dwie tablice\+: jedna dla wartości i jedna dla wag. Wynikiem jest średnia ważona tych wartości. Funkcja używa dwóch pętli for do sumowania iloczynów wartości i wag oraz samych wag. Następnie dzieli sumę produktów przez sumę wag, aby uzyskać średnią ważoną.
+
+Średnią ważoną oblicza się ze wzoru\+: $  X_w = \frac{\sum_{i=1}^n w_i x_i}{\sum_{i=1}^n w_i} $ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+statistics.\+h\item 
+statistics.\+cpp\end{DoxyCompactItemize}
